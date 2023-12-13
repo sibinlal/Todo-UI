@@ -8,7 +8,7 @@ import { NetworkErrorComponent } from './components/others/network-error/network
 
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
-  {path:'**', component:NotfoundComponent},
+  //{path:'**', component:NotfoundComponent},
   {path:'todo', component:TodolistComponent},
   {path:'login', component:LoginComponent},
   {path:'signUp', component:SignupComponent},
