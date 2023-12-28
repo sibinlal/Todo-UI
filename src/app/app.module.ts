@@ -10,6 +10,12 @@ import { TodoitemsComponent } from './components/todo/todoitems/todoitems.compon
 import { TodolistComponent } from './components/todo/todolist/todolist.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { SignupComponent } from './components/user/signup/signup.component';
+import { FormsModule , ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import {ToastrModule} from 'ngx-toastr';
+// import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import {NgxPaginationModule} from 'ngx-pagination';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +30,18 @@ import { SignupComponent } from './components/user/signup/signup.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    //Ng2SearchPipeModule,
+    NgxPaginationModule,
+    ToastrModule.forRoot({
+      positionClass:'toast-bottom-center',
+      closeButton: true,
+      progressBar:false,
+      preventDuplicates: true
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
