@@ -7,5 +7,14 @@
             "password" : "test",
             "id" : 1
         }
+    ] ,
+    "customer" : [
+        {
+            "name" : "sibinlal",
+            "email" : "ab@a.com",
+            "phone" : "123",
+            "password" : "test",
+            "id" : 1
+        }
     ]
 }
